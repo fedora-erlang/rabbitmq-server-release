@@ -79,7 +79,7 @@ exec_rabbitmq_server() {
   # shellcheck source=/dev/null
   . "$RABBITMQ_ENV"
 
-  exec /usr/lib/rabbitmq/bin/rabbitmq-server "$@" @STDOUT_STDERR_REDIRECTION@
+  exec /usr/lib/rabbitmq/bin/rabbitmq-server "$@"
 }
 
 run_script_as_rabbitmq() {
